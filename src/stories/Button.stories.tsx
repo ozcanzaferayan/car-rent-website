@@ -4,6 +4,7 @@ import { Button } from "../components/ui/button";
 
 const meta: Meta<typeof Button> = {
   component: Button,
+  //tags: ["autodocs"],
   argTypes: {
     variant: {
       options: [
@@ -21,6 +22,29 @@ const meta: Meta<typeof Button> = {
 
 export default meta;
 type Story = StoryObj<typeof Button>;
+
+export const BaseStory = (args: Story) => (
+  <div className="flex flex-col gap-4 max-w-24">
+    <Button variant={"default"} {...args}>
+      Default
+    </Button>
+    <Button variant={"destructive"} {...args}>
+      Destructive
+    </Button>
+    <Button variant={"outline"} {...args}>
+      Outline
+    </Button>
+    <Button variant={"secondary"} {...args}>
+      Secondary
+    </Button>
+    <Button variant={"ghost"} {...args}>
+      Ghost
+    </Button>
+    <Button variant={"link"} {...args}>
+      Link
+    </Button>
+  </div>
+);
 
 export const Primary: Story = {
   render: (args) => <Button {...args}>Primary</Button>,
