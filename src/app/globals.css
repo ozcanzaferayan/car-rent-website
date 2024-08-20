@@ -11,6 +11,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
     --primary: #3563e9;
+    --primary-foreground: 210 40% 98%;
     --primary-900: #0a196f;
     --primary-800: #102587;
     --primary-700: #1a37a7;
@@ -21,9 +22,17 @@
     --primary-200: #aec8fc;
     --primary-100: #d6e4fd;
     --primary-0: #ffffff;
-    --primary-foreground: 210 40% 98%;
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary-900: #040815;
+    --secondary-800: #080c19;
+    --secondary-700: #0d121f;
+    --secondary-600: #131825;
+    --secondary-500: #1a202c;
+    --secondary-400: #596780;
+    --secondary-300: #90a3bf;
+    --secondary-200: #c3d4e9;
+    --secondary-100: #e0e9f4;
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
     --accent: 210 40% 96.1%;

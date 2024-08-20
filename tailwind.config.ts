@@ -18,7 +18,6 @@ const config = {
         "2xl": "1400px",
       },
     },
-    colors: {},
     extend: {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
@@ -68,6 +67,15 @@ const config = {
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
+          900: "var(--secondary-900)",
+          800: "var(--secondary-800)",
+          700: "var(--secondary-700)",
+          600: "var(--secondary-600)",
+          500: "var(--secondary-500)",
+          400: "var(--secondary-400)",
+          300: "var(--secondary-300)",
+          200: "var(--secondary-200)",
+          100: "var(--secondary-100)",
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
         },
