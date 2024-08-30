@@ -5,6 +5,8 @@ const SvgNext = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 394 80"
+    width="24"
+    height="24"
     {...props}
   >
     <path

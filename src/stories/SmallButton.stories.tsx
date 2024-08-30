@@ -24,7 +24,7 @@ const meta: Meta<typeof Button> = {
 export default meta;
 type Story = StoryObj<typeof Button>;
 
-export const SmallPrimaryButtons = (args: Story) => {
+export const Primary = (args: Story) => {
   return (
     <div className="grid grid-cols-5 grid-rows-6 gap-4 max-w-[500px]">
       <span className="font-bold"></span>
@@ -33,43 +33,33 @@ export const SmallPrimaryButtons = (args: Story) => {
       <span className="font-bold">Icon-Right</span>
       <span className="font-bold">Icon Only</span>
       <span className="font-bold">Enabled</span>
-      <Button variant={"default"} className="bg-primary" {...args}>
+      <Button variant={"default"} {...args}>
         Label
       </Button>
-      <Button variant={"default"} className="bg-primary" {...args}>
+      <Button variant={"default"} {...args}>
         <Wechat width={24} height={24} />
         Label
       </Button>
-      <Button variant={"default"} className="bg-primary" {...args}>
+      <Button variant={"default"} {...args}>
         Label
         <TriangleDown width={12} height={12} />
       </Button>
-      <Button
-        variant={"default"}
-        size={"icon"}
-        className="bg-primary"
-        {...args}
-      >
+      <Button variant={"default"} size={"icon"} {...args}>
         <Wechat width={16} height={16} />
       </Button>
       <span className="font-bold">Hover</span>{" "}
-      <Button variant={"default"} className="bg-primary" {...args}>
+      <Button variant={"default"} {...args}>
         Label
       </Button>{" "}
-      <Button variant={"default"} className="bg-primary" {...args}>
+      <Button variant={"default"} {...args}>
         <Wechat width={12} height={12} />
         Label
       </Button>
-      <Button variant={"default"} className="bg-primary" {...args}>
+      <Button variant={"default"} {...args}>
         Label
         <TriangleDown width={12} height={12} />
       </Button>
-      <Button
-        variant={"default"}
-        size={"icon"}
-        className="bg-primary"
-        {...args}
-      >
+      <Button variant={"default"} size={"icon"} {...args}>
         <Wechat width={16} height={16} />
       </Button>
       <span className="font-bold">Pressed</span>
@@ -131,7 +121,7 @@ export const SmallPrimaryButtons = (args: Story) => {
   );
 };
 
-export const SmallSecondaryButtons = (args: Story) => {
+export const Secondary = (args: Story) => {
   return (
     <div className="grid grid-cols-5 grid-rows-6 gap-4 max-w-[500px]">
       <span className="font-bold"></span>
@@ -147,123 +137,228 @@ export const SmallSecondaryButtons = (args: Story) => {
         <Wechat width={12} height={12} />
         Label
       </Button>
-      <Button variant={"default"} className="bg-primary" {...args}>
+      <Button variant={"secondary"} {...args}>
         Label
         <TriangleDown width={12} height={12} />
       </Button>
-      <Button
-        variant={"default"}
-        size={"icon"}
-        className="bg-primary"
-        {...args}
-      >
+      <Button variant={"secondary"} size={"icon"} {...args}>
         <Wechat width={16} height={16} />
       </Button>
-      <span className="font-bold">Hover</span>{" "}
-      <Button variant={"default"} className="bg-primary" {...args}>
+      <span className="font-bold">Hover</span>
+      <Button
+        variant={"secondary"}
+        className="border-secondary-400 text-secondary-500"
+        {...args}
+      >
         Label
-      </Button>{" "}
-      <Button variant={"default"} className="bg-primary" {...args}>
+      </Button>
+      <Button
+        variant={"secondary"}
+        className="border-secondary-400 text-secondary-500"
+        {...args}
+      >
         <Wechat width={12} height={12} />
         Label
       </Button>
-      <Button variant={"default"} className="bg-primary" {...args}>
+      <Button
+        variant={"secondary"}
+        className="border-secondary-400 text-secondary-500"
+        {...args}
+      >
         Label
         <TriangleDown width={12} height={12} />
       </Button>
       <Button
-        variant={"default"}
+        variant={"secondary"}
+        className="border-secondary-400 text-secondary-500"
         size={"icon"}
-        className="bg-primary"
         {...args}
       >
         <Wechat width={16} height={16} />
       </Button>
       <span className="font-bold">Pressed</span>
-      <Button variant={"default"} className="bg-primary-700" {...args}>
+      <Button
+        variant={"secondary"}
+        className="bg-primary-100 border-secondary-300"
+        {...args}
+      >
         Label
       </Button>
-      <Button variant={"default"} className="bg-primary-700" {...args}>
+      <Button
+        variant={"secondary"}
+        className="bg-primary-100 border-secondary-300"
+        {...args}
+      >
         <Wechat width={12} height={12} />
         Label
       </Button>
-      <Button variant={"default"} className="bg-primary-700" {...args}>
+      <Button
+        variant={"secondary"}
+        className="bg-primary-100 border-secondary-300"
+        {...args}
+      >
         Label
         <TriangleDown width={12} height={12} />
       </Button>
       <Button
-        variant={"default"}
+        variant={"secondary"}
         size={"icon"}
-        className="bg-primary-700"
+        className="bg-primary-100 border-secondary-300"
         {...args}
       >
         <Wechat width={16} height={16} />
       </Button>
       <span className="font-bold">Focused</span>
-      <Button variant={"default"} className="ring-1 ring-ring" {...args}>
+      <Button variant={"secondary"} {...args}>
         Label
       </Button>
-      <Button variant={"default"} className="ring-1 ring-ring" {...args}>
+      <Button variant={"secondary"} {...args}>
         <Wechat width={12} height={12} />
         Label
       </Button>
-      <Button variant={"default"} className="ring-1 ring-ring" {...args}>
+      <Button variant={"secondary"} {...args}>
         Label
         <TriangleDown width={12} height={12} />
       </Button>{" "}
-      <Button
-        variant={"default"}
-        size={"icon"}
-        className="ring-1 ring-ring"
-        {...args}
-      >
+      <Button variant={"secondary"} size={"icon"} {...args}>
         <Wechat width={16} height={16} />
       </Button>
       <span className="font-bold">Disable</span>
-      <Button variant={"default"} disabled {...args}>
+      <Button variant={"secondary"} disabled {...args}>
         Label
       </Button>
-      <Button variant={"default"} disabled {...args}>
+      <Button variant={"secondary"} disabled {...args}>
         <Wechat width={12} height={12} />
         Label
       </Button>{" "}
-      <Button variant={"default"} disabled {...args}>
+      <Button variant={"secondary"} disabled {...args}>
         Label
         <TriangleDown width={12} height={12} />
       </Button>
-      <Button variant={"default"} size={"icon"} disabled {...args}>
+      <Button variant={"secondary"} size={"icon"} disabled {...args}>
         <Wechat width={16} height={16} />
       </Button>
     </div>
   );
 };
 
-export const Primary: Story = {
-  render: (args) => <Button {...args}>Primary</Button>,
-  args: { variant: "default" },
-};
-
-export const Secondary: Story = {
-  render: (args) => <Button {...args}>Secondary</Button>,
-  args: { variant: "secondary" },
-};
-
-export const Destructive: Story = {
-  render: (args) => <Button {...args}>Destructive</Button>,
-  args: { variant: "destructive" },
-};
-
-export const Outline: Story = {
-  render: (args) => <Button {...args}>Outline</Button>,
-  args: { variant: "outline" },
-};
-
-export const Ghost: Story = {
-  render: (args) => <Button {...args}>Ghost</Button>,
-  args: { variant: "ghost" },
-};
-
-export const Link: Story = {
-  render: (args) => <Button {...args}>Link</Button>,
-  args: { variant: "link" },
+export const Minimal = (args: Story) => {
+  return (
+    <div className="grid grid-cols-5 grid-rows-6 gap-4 max-w-[500px]">
+      <span className="font-bold"></span>
+      <span className="font-bold">Label</span>
+      <span className="font-bold">Icon-Left</span>
+      <span className="font-bold">Icon-Right</span>
+      <span className="font-bold">Icon Only</span>
+      <span className="font-bold">Enabled</span>
+      <Button variant={"secondary"} {...args}>
+        Label
+      </Button>
+      <Button variant={"secondary"} {...args}>
+        <Wechat width={12} height={12} />
+        Label
+      </Button>
+      <Button variant={"secondary"} {...args}>
+        Label
+        <TriangleDown width={12} height={12} />
+      </Button>
+      <Button variant={"secondary"} size={"icon"} {...args}>
+        <Wechat width={16} height={16} />
+      </Button>
+      <span className="font-bold">Hover</span>
+      <Button
+        variant={"secondary"}
+        className="border-secondary-400 text-secondary-500"
+        {...args}
+      >
+        Label
+      </Button>
+      <Button
+        variant={"secondary"}
+        className="border-secondary-400 text-secondary-500"
+        {...args}
+      >
+        <Wechat width={12} height={12} />
+        Label
+      </Button>
+      <Button
+        variant={"secondary"}
+        className="border-secondary-400 text-secondary-500"
+        {...args}
+      >
+        Label
+        <TriangleDown width={12} height={12} />
+      </Button>
+      <Button
+        variant={"secondary"}
+        className="border-secondary-400 text-secondary-500"
+        size={"icon"}
+        {...args}
+      >
+        <Wechat width={16} height={16} />
+      </Button>
+      <span className="font-bold">Pressed</span>
+      <Button
+        variant={"secondary"}
+        className="bg-primary-100 border-secondary-300"
+        {...args}
+      >
+        Label
+      </Button>
+      <Button
+        variant={"secondary"}
+        className="bg-primary-100 border-secondary-300"
+        {...args}
+      >
+        <Wechat width={12} height={12} />
+        Label
+      </Button>
+      <Button
+        variant={"secondary"}
+        className="bg-primary-100 border-secondary-300"
+        {...args}
+      >
+        Label
+        <TriangleDown width={12} height={12} />
+      </Button>
+      <Button
+        variant={"secondary"}
+        size={"icon"}
+        className="bg-primary-100 border-secondary-300"
+        {...args}
+      >
+        <Wechat width={16} height={16} />
+      </Button>
+      <span className="font-bold">Focused</span>
+      <Button variant={"secondary"} {...args}>
+        Label
+      </Button>
+      <Button variant={"secondary"} {...args}>
+        <Wechat width={12} height={12} />
+        Label
+      </Button>
+      <Button variant={"secondary"} {...args}>
+        Label
+        <TriangleDown width={12} height={12} />
+      </Button>{" "}
+      <Button variant={"secondary"} size={"icon"} {...args}>
+        <Wechat width={16} height={16} />
+      </Button>
+      <span className="font-bold">Disable</span>
+      <Button variant={"secondary"} disabled {...args}>
+        Label
+      </Button>
+      <Button variant={"secondary"} disabled {...args}>
+        <Wechat width={12} height={12} />
+        Label
+      </Button>{" "}
+      <Button variant={"secondary"} disabled {...args}>
+        Label
+        <TriangleDown width={12} height={12} />
+      </Button>
+      <Button variant={"secondary"} size={"icon"} disabled {...args}>
+        <Wechat width={16} height={16} />
+      </Button>
+    </div>
+  );
 };

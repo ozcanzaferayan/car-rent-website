@@ -16,6 +16,7 @@ type Story = StoryObj<typeof Button>;
 export const Icons = (args: Story) => {
   return (
     <div className="flex flex-1 gap-4">
+      <Wechat color="dodgerblue" />
       <Wechat width={12} height={12} color="dodgerblue" />
       <Wechat width={24} height={24} color="dodgerblue" />
       <Wechat width={48} height={48} color="dodgerblue" />
