@@ -22,6 +22,7 @@
     --primary-200: #aec8fc;
     --primary-100: #d6e4fd;
     --primary-0: #ffffff;
+    /* Secondary Colors */
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
     --secondary-900: #040815;
@@ -33,6 +34,59 @@
     --secondary-300: #90a3bf;
     --secondary-200: #c3d4e9;
     --secondary-100: #e0e9f4;
+
+    /* Success Colors */
+    --success: 0 84.2% 60.2%;
+    --success-foreground: 210 40% 98%;
+    --success-900: #3b6506;
+    --success-800: #4c7a0b;
+    --success-700: #659711;
+    --success-600: #7fb519;
+    --success-500: #9cd323; /* Default */
+    --success-400: #bce455;
+    --success-300: #d3f178;
+    --success-200: #e8faa6;
+    --success-100: #f5fcd2;
+
+    /* Error Colors */
+    --error: 0 84.2% 60.2%;
+    --error-foreground: 210 40% 98%;
+    --error-100: #ffe7d3;
+    --error-200: #ffc8a6;
+    --error-300: #ffa37a;
+    --error-400: #ff7f59;
+    --error-500: #ff4423; /* Default */
+    --error-600: #db2719;
+    --error-700: #b71112;
+    --error-800: #930b16;
+    --error-900: #7a0619;
+
+    /* Warning Colors */
+    --warning: 0 84.2% 60.2%;
+    --warning-foreground: 210 40% 98%;
+    --warning-100: #fff8d7;
+    --warning-200: #ffefb0;
+    --warning-300: #ffe488;
+    --warning-400: #ffd96b;
+    --warning-500: #ffc73a; /* Default */
+    --warning-600: #dba32a;
+    --warning-700: #b7821d;
+    --warning-800: #936312;
+    --warning-900: #7a4d0b;
+
+    /* Information Colors */
+    --info: 0 84.2% 60.2%;
+    --info-foreground: 210 40% 98%;
+    --info-100: #dcf3ff;
+    --info-200: #bae5ff;
+    --info-300: #9bd3ff;
+    --info-400: #7ec2ff;
+    --info-500: #54a6ff; /* Default */
+    --info-600: #3d81db;
+    --info-700: #2a60b7;
+    --info-800: #1a4393;
+    --info-900: #102e7a;
+
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
     --accent: 210 40% 96.1%;
