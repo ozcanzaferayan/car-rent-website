@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import Image from "next/image";
+import { TriangleDown, Wechat } from "@/icons";
 import { Button } from "../components/ui/button";
 
 const meta: Meta<typeof Button> = {
@@ -37,26 +37,12 @@ export const SmallPrimaryButtons = (args: Story) => {
         Label
       </Button>
       <Button variant={"default"} className="bg-primary" {...args}>
-        <Image
-          className=""
-          src="/wechat.svg"
-          alt="wechat"
-          width={12}
-          height={12}
-          priority
-        />
+        <Wechat width={24} height={24} />
         Label
       </Button>
       <Button variant={"default"} className="bg-primary" {...args}>
         Label
-        <Image
-          className=""
-          src="/triangle-down.svg"
-          alt="triangle"
-          width={12}
-          height={12}
-          priority
-        />
+        <TriangleDown width={12} height={12} />
       </Button>
       <Button
         variant={"default"}
@@ -64,40 +50,19 @@ export const SmallPrimaryButtons = (args: Story) => {
         className="bg-primary"
         {...args}
       >
-        <Image
-          className=""
-          src="/wechat.svg"
-          alt="wechat"
-          width={16}
-          height={16}
-          priority
-        />
+        <Wechat width={16} height={16} />
       </Button>
       <span className="font-bold">Hover</span>{" "}
       <Button variant={"default"} className="bg-primary" {...args}>
         Label
       </Button>{" "}
       <Button variant={"default"} className="bg-primary" {...args}>
-        <Image
-          className=""
-          src="/wechat.svg"
-          alt="wechat"
-          width={12}
-          height={12}
-          priority
-        />
+        <Wechat width={12} height={12} />
         Label
       </Button>
       <Button variant={"default"} className="bg-primary" {...args}>
         Label
-        <Image
-          className=""
-          src="/triangle-down.svg"
-          alt="triangle"
-          width={12}
-          height={12}
-          priority
-        />
+        <TriangleDown width={12} height={12} />
       </Button>
       <Button
         variant={"default"}
@@ -105,40 +70,19 @@ export const SmallPrimaryButtons = (args: Story) => {
         className="bg-primary"
         {...args}
       >
-        <Image
-          className=""
-          src="/wechat.svg"
-          alt="wechat"
-          width={16}
-          height={16}
-          priority
-        />
+        <Wechat width={16} height={16} />
       </Button>
       <span className="font-bold">Pressed</span>
       <Button variant={"default"} className="bg-primary-700" {...args}>
         Label
       </Button>
       <Button variant={"default"} className="bg-primary-700" {...args}>
-        <Image
-          className=""
-          src="/wechat.svg"
-          alt="wechat"
-          width={12}
-          height={12}
-          priority
-        />
+        <Wechat width={12} height={12} />
         Label
       </Button>
       <Button variant={"default"} className="bg-primary-700" {...args}>
         Label
-        <Image
-          className=""
-          src="/triangle-down.svg"
-          alt="triangle"
-          width={12}
-          height={12}
-          priority
-        />
+        <TriangleDown width={12} height={12} />
       </Button>
       <Button
         variant={"default"}
@@ -146,40 +90,19 @@ export const SmallPrimaryButtons = (args: Story) => {
         className="bg-primary-700"
         {...args}
       >
-        <Image
-          className=""
-          src="/wechat.svg"
-          alt="wechat"
-          width={16}
-          height={16}
-          priority
-        />
+        <Wechat width={16} height={16} />
       </Button>
       <span className="font-bold">Focused</span>
       <Button variant={"default"} className="ring-1 ring-ring" {...args}>
         Label
       </Button>
       <Button variant={"default"} className="ring-1 ring-ring" {...args}>
-        <Image
-          className=""
-          src="/wechat.svg"
-          alt="wechat"
-          width={12}
-          height={12}
-          priority
-        />
+        <Wechat width={12} height={12} />
         Label
       </Button>
       <Button variant={"default"} className="ring-1 ring-ring" {...args}>
         Label
-        <Image
-          className=""
-          src="/triangle-down.svg"
-          alt="triangle"
-          width={12}
-          height={12}
-          priority
-        />
+        <TriangleDown width={12} height={12} />
       </Button>{" "}
       <Button
         variant={"default"}
@@ -187,50 +110,22 @@ export const SmallPrimaryButtons = (args: Story) => {
         className="ring-1 ring-ring"
         {...args}
       >
-        <Image
-          className=""
-          src="/wechat.svg"
-          alt="wechat"
-          width={16}
-          height={16}
-          priority
-        />
+        <Wechat width={16} height={16} />
       </Button>
       <span className="font-bold">Disable</span>
       <Button variant={"default"} disabled {...args}>
         Label
       </Button>
       <Button variant={"default"} disabled {...args}>
-        <Image
-          className=""
-          src="/wechat.svg"
-          alt="wechat"
-          width={12}
-          height={12}
-          priority
-        />
+        <Wechat width={12} height={12} />
         Label
       </Button>{" "}
       <Button variant={"default"} disabled {...args}>
         Label
-        <Image
-          className=""
-          src="/triangle-down.svg"
-          alt="triangle"
-          width={12}
-          height={12}
-          priority
-        />
+        <TriangleDown width={12} height={12} />
       </Button>
       <Button variant={"default"} size={"icon"} disabled {...args}>
-        <Image
-          className=""
-          src="/wechat.svg"
-          alt="wechat"
-          width={16}
-          height={16}
-          priority
-        />
+        <Wechat width={16} height={16} />
       </Button>
     </div>
   );
@@ -249,26 +144,12 @@ export const SmallSecondaryButtons = (args: Story) => {
         Label
       </Button>
       <Button variant={"secondary"} {...args}>
-        <Image
-          className=""
-          src="/wechat.svg"
-          alt="wechat"
-          width={12}
-          height={12}
-          priority
-        />
+        <Wechat width={12} height={12} />
         Label
       </Button>
       <Button variant={"default"} className="bg-primary" {...args}>
         Label
-        <Image
-          className=""
-          src="/triangle-down.svg"
-          alt="triangle"
-          width={12}
-          height={12}
-          priority
-        />
+        <TriangleDown width={12} height={12} />
       </Button>
       <Button
         variant={"default"}
@@ -276,40 +157,19 @@ export const SmallSecondaryButtons = (args: Story) => {
         className="bg-primary"
         {...args}
       >
-        <Image
-          className=""
-          src="/wechat.svg"
-          alt="wechat"
-          width={16}
-          height={16}
-          priority
-        />
+        <Wechat width={16} height={16} />
       </Button>
       <span className="font-bold">Hover</span>{" "}
       <Button variant={"default"} className="bg-primary" {...args}>
         Label
       </Button>{" "}
       <Button variant={"default"} className="bg-primary" {...args}>
-        <Image
-          className=""
-          src="/wechat.svg"
-          alt="wechat"
-          width={12}
-          height={12}
-          priority
-        />
+        <Wechat width={12} height={12} />
         Label
       </Button>
       <Button variant={"default"} className="bg-primary" {...args}>
         Label
-        <Image
-          className=""
-          src="/triangle-down.svg"
-          alt="triangle"
-          width={12}
-          height={12}
-          priority
-        />
+        <TriangleDown width={12} height={12} />
       </Button>
       <Button
         variant={"default"}
@@ -317,40 +177,19 @@ export const SmallSecondaryButtons = (args: Story) => {
         className="bg-primary"
         {...args}
       >
-        <Image
-          className=""
-          src="/wechat.svg"
-          alt="wechat"
-          width={16}
-          height={16}
-          priority
-        />
+        <Wechat width={16} height={16} />
       </Button>
       <span className="font-bold">Pressed</span>
       <Button variant={"default"} className="bg-primary-700" {...args}>
         Label
       </Button>
       <Button variant={"default"} className="bg-primary-700" {...args}>
-        <Image
-          className=""
-          src="/wechat.svg"
-          alt="wechat"
-          width={12}
-          height={12}
-          priority
-        />
+        <Wechat width={12} height={12} />
         Label
       </Button>
       <Button variant={"default"} className="bg-primary-700" {...args}>
         Label
-        <Image
-          className=""
-          src="/triangle-down.svg"
-          alt="triangle"
-          width={12}
-          height={12}
-          priority
-        />
+        <TriangleDown width={12} height={12} />
       </Button>
       <Button
         variant={"default"}
@@ -358,40 +197,19 @@ export const SmallSecondaryButtons = (args: Story) => {
         className="bg-primary-700"
         {...args}
       >
-        <Image
-          className=""
-          src="/wechat.svg"
-          alt="wechat"
-          width={16}
-          height={16}
-          priority
-        />
+        <Wechat width={16} height={16} />
       </Button>
       <span className="font-bold">Focused</span>
       <Button variant={"default"} className="ring-1 ring-ring" {...args}>
         Label
       </Button>
       <Button variant={"default"} className="ring-1 ring-ring" {...args}>
-        <Image
-          className=""
-          src="/wechat.svg"
-          alt="wechat"
-          width={12}
-          height={12}
-          priority
-        />
+        <Wechat width={12} height={12} />
         Label
       </Button>
       <Button variant={"default"} className="ring-1 ring-ring" {...args}>
         Label
-        <Image
-          className=""
-          src="/triangle-down.svg"
-          alt="triangle"
-          width={12}
-          height={12}
-          priority
-        />
+        <TriangleDown width={12} height={12} />
       </Button>{" "}
       <Button
         variant={"default"}
@@ -399,50 +217,22 @@ export const SmallSecondaryButtons = (args: Story) => {
         className="ring-1 ring-ring"
         {...args}
       >
-        <Image
-          className=""
-          src="/wechat.svg"
-          alt="wechat"
-          width={16}
-          height={16}
-          priority
-        />
+        <Wechat width={16} height={16} />
       </Button>
       <span className="font-bold">Disable</span>
       <Button variant={"default"} disabled {...args}>
         Label
       </Button>
       <Button variant={"default"} disabled {...args}>
-        <Image
-          className=""
-          src="/wechat.svg"
-          alt="wechat"
-          width={12}
-          height={12}
-          priority
-        />
+        <Wechat width={12} height={12} />
         Label
       </Button>{" "}
       <Button variant={"default"} disabled {...args}>
         Label
-        <Image
-          className=""
-          src="/triangle-down.svg"
-          alt="triangle"
-          width={12}
-          height={12}
-          priority
-        />
+        <TriangleDown width={12} height={12} />
       </Button>
       <Button variant={"default"} size={"icon"} disabled {...args}>
-        <Image
-          className=""
-          src="/wechat.svg"
-          alt="wechat"
-          width={16}
-          height={16}
-          priority
-        />
+        <Wechat width={16} height={16} />
       </Button>
     </div>
   );

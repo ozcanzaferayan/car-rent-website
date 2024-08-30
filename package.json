@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "convert-svg": "svgr ./public --out-dir ./src/icons --typescript --no-dimensions --svg-props width=24,height=24 --replace-attr-values '#fff=currentColor'"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.0",
@@ -31,6 +32,7 @@
     "@storybook/nextjs": "^8.2.9",
     "@storybook/react": "^8.2.9",
     "@storybook/test": "^8.2.9",
+    "@svgr/cli": "^8.1.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
