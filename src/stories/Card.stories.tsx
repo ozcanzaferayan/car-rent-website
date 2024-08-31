@@ -22,7 +22,7 @@ type Story = StoryObj<typeof Button>;
 
 export const WebView = (args: Story) => {
   return (
-    <Card className="w-full max-w-[304px]">
+    <Card className="w-full max-w-sm sm:max-w-none">
       <CardHeader className="flex flex-row justify-between relative pb-0">
         <div className="flex flex-col">
           <span className="text-xl font-semibold">CR - V</span>
@@ -32,8 +32,8 @@ export const WebView = (args: Story) => {
           <Heart width={24} height={24} color="dodgerblue" />
         </Button>
       </CardHeader>
-      <CardContent className="flex py-12">
-        <div className="relative overflow-hidden w-full h-24">
+      <CardContent className="flex flex-col sm:flex-row">
+        <div className="relative overflow-hidden w-full h-24 my-12">
           <Image
             src="/Car.png"
             alt={"Car"}
@@ -42,22 +42,23 @@ export const WebView = (args: Story) => {
           />
           <div className="absolute bottom-0 w-full h-12 bg-gradient-to-t from-white" />
         </div>
+
+        <div className="flex justify-between gap-4 sm:flex-col sm:justify-center">
+          <div className="flex items-center gap-1.5 text-secondary-300">
+            <GasStation width={24} height={24} />
+            <span className="text-sm">80L</span>
+          </div>
+          <div className="flex items-center gap-1.5 text-secondary-300">
+            <Car width={24} height={24} />
+            <span className="text-sm">Manual</span>
+          </div>
+          <div className="flex items-center gap-1.5 text-secondary-300">
+            <Profile2User width={24} height={24} />
+            <span className="text-sm">80L</span>
+          </div>
+        </div>
       </CardContent>
 
-      <CardFooter className="flex justify-between gap-4">
-        <div className="flex items-center gap-1.5 text-secondary-300">
-          <GasStation width={24} height={24} />
-          <span className="text-sm">80L</span>
-        </div>
-        <div className="flex items-center gap-1.5 text-secondary-300">
-          <Car width={24} height={24} />
-          <span className="text-sm">Manual</span>
-        </div>
-        <div className="flex items-center gap-1.5 text-secondary-300">
-          <Profile2User width={24} height={24} />
-          <span className="text-sm">80L</span>
-        </div>
-      </CardFooter>
       <CardFooter className="flex gap-4">
         <span className="text-xl font-bold w-full">
           $80.00/ <span className="text-sm text-secondary-300">day</span>
