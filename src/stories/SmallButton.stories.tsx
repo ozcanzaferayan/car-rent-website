@@ -49,10 +49,10 @@ export const Primary = (args: Story) => {
           <Wechat width={16} height={16} />
         </Button>
       </div>
-      <span className="font-bold">Hover</span>{" "}
+      <span className="font-bold">Hover</span>
       <Button size={"sm"} variant={"default"} {...args}>
         Label
-      </Button>{" "}
+      </Button>
       <Button size={"sm"} variant={"default"} {...args}>
         <Wechat width={12} height={12} />
         Label
@@ -129,7 +129,7 @@ export const Primary = (args: Story) => {
       >
         Label
         <TriangleDown width={12} height={12} />
-      </Button>{" "}
+      </Button>
       <div>
         <Button
           variant={"default"}
@@ -147,7 +147,7 @@ export const Primary = (args: Story) => {
       <Button size={"sm"} variant={"default"} disabled {...args}>
         <Wechat width={12} height={12} />
         Label
-      </Button>{" "}
+      </Button>
       <Button size={"sm"} variant={"default"} disabled {...args}>
         Label
         <TriangleDown width={12} height={12} />
@@ -271,7 +271,7 @@ export const Secondary = (args: Story) => {
       <Button size={"sm"} variant={"secondary"} {...args}>
         Label
         <TriangleDown width={12} height={12} />
-      </Button>{" "}
+      </Button>
       <div>
         <Button size={"sm"} variant={"secondary"} {...args}>
           <Wechat width={16} height={16} />
@@ -284,7 +284,7 @@ export const Secondary = (args: Story) => {
       <Button size={"sm"} variant={"secondary"} disabled {...args}>
         <Wechat width={12} height={12} />
         Label
-      </Button>{" "}
+      </Button>
       <Button size={"sm"} variant={"secondary"} disabled {...args}>
         Label
         <TriangleDown width={12} height={12} />
@@ -420,7 +420,7 @@ export const Minimal = (args: Story) => {
       >
         Label
         <TriangleDown width={12} height={12} />
-      </Button>{" "}
+      </Button>
       <div>
         <Button
           variant={"ghost"}
@@ -438,7 +438,7 @@ export const Minimal = (args: Story) => {
       <Button size={"sm"} variant={"ghost"} disabled {...args}>
         <Wechat width={12} height={12} />
         Label
-      </Button>{" "}
+      </Button>
       <Button size={"sm"} variant={"ghost"} disabled {...args}>
         Label
         <TriangleDown width={12} height={12} />

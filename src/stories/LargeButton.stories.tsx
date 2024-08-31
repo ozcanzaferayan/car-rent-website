@@ -163,7 +163,7 @@ export const Primary = (args: Story) => {
 
 export const Secondary = (args: Story) => {
   return (
-    <div className="grid grid-cols-5 grid-rows-6 gap-4 max-w-[500px]">
+    <div className="grid grid-cols-5 grid-rows-6 gap-4 max-w-[700px]">
       <span className="font-bold"></span>
       <span className="font-bold">Label</span>
       <span className="font-bold">Icon-Left</span>
@@ -300,7 +300,7 @@ export const Secondary = (args: Story) => {
 
 export const Minimal = (args: Story) => {
   return (
-    <div className="grid grid-cols-5 grid-rows-6 gap-4 max-w-[500px]">
+    <div className="grid grid-cols-5 grid-rows-6 gap-4 max-w-[700px]">
       <span className="font-bold"></span>
       <span className="font-bold">Label</span>
       <span className="font-bold">Icon-Left</span>
